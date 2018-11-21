@@ -5,7 +5,12 @@ section.calculation
       .calculation__subtitle Мы перезвоним Вам в течении 2-х минут
       form.form
         .form__item
-          input(type="text", id="name", name="name", placeholder="Ваше имя", required)
+          input(type="text", id="name", name="name", placeholder="Ваше имя", required).form__input
         .form__item
-          input(type="tel", id="tel", name="tel", placeholder="Ваш номер", required)
+          input(type="tel", id="tel", name="tel", placeholder="Ваш номер", required).form__input
         button(type="submit").submit-btn Рассчитать
+        .form__item.form__item_no-max-width
+          label(for="accept", class="form__label checkbox")
+            | Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных.  Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
+            input(id="accept", type="checkbox")
+            span.checkbox__checkmark

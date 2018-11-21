@@ -173,12 +173,17 @@
           <div class="calculation__subtitle">Мы перезвоним Вам в течении 2-х минут</div>
           <form class="form">
             <div class="form__item">
-              <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
             </div>
             <div class="form__item">
-              <input type="tel" id="tel" name="tel" placeholder="Ваш номер" required>
+              <input class="form__input" type="tel" id="tel" name="tel" placeholder="Ваш номер" required>
             </div>
             <button class="submit-btn" type="submit">Рассчитать</button>
+            <div class="form__item form__item_no-max-width">
+              <label class="form__label checkbox" for="accept">Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных. Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
+                <input id="accept" type="checkbox"><span class="checkbox__checkmark"></span>
+              </label>
+            </div>
           </form>
         </div>
       </div>
