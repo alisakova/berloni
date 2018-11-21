@@ -1,0 +1,14 @@
+.btn {
+  border: 2px solid $red;
+  padding: rem(7 18 8);
+  text-align: center;
+  font: {
+    size: rem(18);
+    weight: 400;
+  }
+  background: #fff;
+  transition: color 250ms, border-color 250ms;
+  &:hover {
+    color: darken($main-font-color, 50%);
+  }
+}

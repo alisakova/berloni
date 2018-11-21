@@ -1,0 +1,25 @@
+.nav {
+  margin-bottom: rem(19);
+  font-weight: 300;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: rem(45);
+  }
+}
+
+.nav__link {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  &:hover {
+    color: #000;
+    border-color: $red;
+  }
+}

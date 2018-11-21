@@ -1,0 +1,27 @@
+.calculation {
+  background: url("../img/calculation-bg.jpg") center center no-repeat;
+  background-size: cover;
+  margin-bottom: rem(80);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 45.2%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.calculation__form {
+  position: relative;
+  z-index: 3;
+  padding: rem(64 40 22 5);
+}
+
+.calculation__subtitle {
+  font-size: rem(18);
+  margin-bottom: rem(60);
+}

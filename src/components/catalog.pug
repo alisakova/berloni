@@ -1,0 +1,40 @@
+-
+  var catalogDatas = [
+    {
+      "name": "Кухонный гарнитур Canova",
+      "price": "540 000",
+      "img": "canova.jpg"
+    },
+    {
+      "name": "Кухонный гарнитур Grangala",
+      "price": "740 000",
+      "img": "grangala.jpg"
+    },
+    {
+      "name": "Кухонный гарнитур Athena",
+      "price": "940 000",
+      "img": "athena.jpg"
+    },
+    {
+      "name": "Кухонный гарнитур Olympia",
+      "price": "750 000",
+      "img": "olympia-2.jpg"
+    },
+    {
+      "name": "Кухонный гарнитур Olympia",
+      "price": "850 000",
+      "img": "olympia.jpg"
+    },
+    {
+      "name": "Кухонный гарнитур Ginevra",
+      "price": "450 000",
+      "img": "ginevra.jpg"
+    }
+  ]
+
+section.catalog
+  +title("Стоимость кухонных гарнитуров")
+  .container
+    .catalog__container
+      for item in catalogDatas
+        +product(item.name, item.img, item.price)

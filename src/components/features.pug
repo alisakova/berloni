@@ -1,0 +1,20 @@
+-
+  var features = [
+    "Упаковка каждого элемента",
+    "Провека каждой детали",
+    "Гарантия кухни 10 лет",
+    "100% Италия",
+    "Фасады 22 мм",
+    "Бесшумные петли"
+  ]
+
+section.features
+  +title("Преимущества")
+  .container
+    .features__items 
+      for item, index in features
+        .features__item
+          .features__icon
+            img(src="img/features/feature-" + index + ".svg", alt="Преимущество")
+          .features__descr= item
+          

@@ -1,0 +1,10 @@
+mixin product(name, img, price) 
+  .product
+    .product__name= name
+    .product__img
+      img(src="img/catalog/" + img, alt= name)
+    .product__price-container
+      span.product__price= price
+      span.product__icon
+        img(src="img/catalog/coin.svg", alt="Рубль")
+    button.product__show-more

@@ -1,0 +1,24 @@
+-
+  var introItems = [
+    {
+      "class": "size-icon",
+      "text": "Выезд замерщика на обьект"
+    },
+    {
+      "class": "design-icon",
+      "text": "Бесплатный дизайн-проект"
+    },
+    {
+      "class": "garant-icon",
+      "text": "Гарантия на работы и комплектющие"
+    }
+  ]
+
+section.intro
+  .container
+    .intro__container
+      .intro__info
+        ul.features-info
+          for item in introItems
+            li.features-info__item(class="features-info__item_" + item.class)= item.text
+      

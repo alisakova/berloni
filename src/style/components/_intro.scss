@@ -1,0 +1,16 @@
+.intro__info {
+  padding: rem(65 20 216 152);
+}
+
+.intro__container {
+  
+}
+
+.intro__images {
+  flex-basis: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

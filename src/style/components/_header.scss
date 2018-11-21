@@ -1,0 +1,24 @@
+.header {
+  margin-bottom: rem(54);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__col {
+  &_padding-top {
+    padding-top: rem(36);
+  }
+  &_big-padding-top {
+    padding-top: rem(57);
+  }
+}
+
+.header__tel {
+  &:hover {
+    color: #000;
+  }
+}
