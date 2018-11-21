@@ -1,0 +1,29 @@
+.reviews-slider {
+  .slick-slide {
+    padding: rem(17 97 16 120);
+    background: #fff;
+    box-shadow: 4px 4px 10px $border-color;
+    position: relative;
+  }
+}
+
+.reviews-slider__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.reviews-slider__text {
+  .italic {
+    font: {
+      style: italic;
+      weight: 400;
+    }
+  }
+}
+
+.reviews-slider__photo {
+  max-width: rem(167);
+  min-width: rem(167);
+  margin-right: rem(37);
+}

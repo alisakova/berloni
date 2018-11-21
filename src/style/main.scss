@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 @import "util";
+@import "slick.css";
 
 html {
 	height: 100%;
@@ -98,6 +99,7 @@ p {
   font: {
     size: rem(18);
     weight: 300;
+		family: $text-font;
   }
 	line-height: 1.38;
 	text-align: left;
@@ -143,3 +145,4 @@ img {
 @import "components/form";
 @import "components/submit-btn";
 @import "components/checkbox";
+@import "components/reviews-slider";
