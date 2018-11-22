@@ -11,4 +11,8 @@
   &:hover {
     color: darken($main-font-color, 50%);
   }
+  &_submit {
+    background: transparent;
+    margin-bottom: rem(36);
+  }
 }

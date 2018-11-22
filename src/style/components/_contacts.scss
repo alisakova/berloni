@@ -1,0 +1,41 @@
+.contacts {
+  margin-bottom: rem(22);
+  border-bottom: 1px solid $border-color;
+  .title {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__content {
+  width: 50%;
+  padding: rem(36 0 91 49);
+}
+
+.contacts__container {
+  position: relative;
+}
+
+.contacts__item {
+  font: {
+    size: rem(18);
+  }
+  &_font-weight-300 {
+    font-weight: 300;
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(42);
+  }
+}
+
+.contacts__link {
+  display: block;
+  &:hover {
+    color: #000;
+  }
+}
+
+.contacts__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
