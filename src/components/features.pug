@@ -8,7 +8,7 @@
     "Бесшумные петли"
   ]
 
-section.features
+section(id="features").features
   +title("Преимущества")
   .container
     .features__items 
@@ -17,4 +17,5 @@ section.features
           .features__icon
             img(src="img/features/feature-" + index + ".svg", alt="Преимущество")
           .features__descr= item
+  a(href="#catalog").mouse-btn._scroll-btn
           

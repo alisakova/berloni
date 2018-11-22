@@ -42,6 +42,8 @@
 
 .footer__social-icon {
   display: block;
+  max-width: rem(40);
+  min-width: rem(30);
   &:not(:last-child) {
     margin-right: rem(52);
   }
