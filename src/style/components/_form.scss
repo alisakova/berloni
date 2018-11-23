@@ -11,6 +11,14 @@
   &_no-max-width {
     max-width: 100%;
   }
+  &_bg {
+    background: rgba(238, 52, 37, 0.1);
+    // margin: {
+    //   left: rem(-20);
+    //   right: rem(-26);
+    // }
+    padding: rem(20 17 20 26);
+  }
 }
 
 .form__input {
@@ -34,5 +42,16 @@
       family: $main-font;
     }
     color: $main-font-color;
+  }
+  &_bordered {
+    border: 1px solid $light-gray;
+    font-size: rem(14);
+    padding: rem(10 11);
+    @include input-placeholder {
+      font: {
+        size: rem(14);
+      }
+      color: $light-gray;
+    }
   }
 }

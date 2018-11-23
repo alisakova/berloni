@@ -2,6 +2,7 @@
 @import "mixin";
 @import "util";
 @import "slick.css";
+@import "jquery.modal.css";
 
 html {
 	height: 100%;
@@ -152,3 +153,6 @@ img {
 @import "components/footer";
 @import "components/mouse-btn";
 @import "components/call-btn";
+@import "components/call-modal";
+@import "components/custom-modal";
+@import "components/characteristics";

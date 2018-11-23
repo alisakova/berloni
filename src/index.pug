@@ -12,10 +12,14 @@ html(lang="ru")
     link(rel="stylesheet", type="text/css", href="css/main.css")
   
   body
-    include ./components/header
-    include ./components/nav
     include ./components/title
     include ./components/product
+    include ./components/call-modal
+    include ./components/success-modal
+    +success-modal("success-modal", "Ваша заявка успешно отправлена!", "img/success-modal-img.svg", "custom-modal__art-border_success-call-modal")
+    +success-modal("success-calc-modal", "Ваша заявка на расчёт успешно отправлена!", "img/calc-modal-img.svg", "custom-modal__art-border_success-calc-modal")
+    include ./components/header
+    include ./components/nav
     main
       include ./components/intro
       include ./components/features

@@ -7,3 +7,15 @@ $(document).ready(function(){
     });
   }
 });
+
+$("._open-success-call-modal").click(function(event) {
+  event.preventDefault();
+  $("#success-modal").modal();
+  return false;
+});
+
+$("._open-calc-modal").click(function(event) {
+  event.preventDefault();
+  $("#success-calc-modal").modal();
+  return false;
+});
