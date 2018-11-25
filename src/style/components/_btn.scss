@@ -8,6 +8,8 @@
   }
   background: #fff;
   transition: color 250ms, border-color 250ms;
+  white-space: nowrap;
+  display: block;
   &:hover {
     color: darken($main-font-color, 50%);
   }

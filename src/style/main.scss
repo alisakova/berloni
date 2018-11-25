@@ -53,6 +53,7 @@ button {
 	font-family: $main-font;
 	color: $main-font-color;
 	cursor: pointer;
+	white-space: nowrap;
 }
 
 ul {
@@ -121,15 +122,6 @@ img {
 @media (max-width: 768px) {
 	html {
 		font-size: 10px;
-	}
-}
-
-@media (max-width: 540px) {
-	h1 {
-		font-size: rem(40);
-	}
-	h2 {
-		margin-bottom: rem(40);
 	}
 }
 
