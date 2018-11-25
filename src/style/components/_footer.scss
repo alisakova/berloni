@@ -44,8 +44,25 @@
   display: block;
   max-width: rem(40);
   min-width: rem(30);
+  border-bottom: 1px solid transparent;
+  position: relative;
   &:not(:last-child) {
     margin-right: rem(52);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: rem(-10);
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
   }
 }
 
