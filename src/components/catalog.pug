@@ -3,32 +3,86 @@
     {
       "name": "Кухонный гарнитур Canova",
       "price": "540 000",
-      "img": "canova.jpg"
+      "img": "canova.jpg",
+      "subtitle": "Современный стиль. Модель Canova",
+      "colors": [
+        "676155",
+        "D9D4D0",
+        "5B5B5B",
+        "A5988D"
+      ],
+      "delivery": "3 месяца",
+      "materials": "шпонированный дуб, толщиной 23 мм"
     },
     {
       "name": "Кухонный гарнитур Grangala",
       "price": "740 000",
-      "img": "grangala.jpg"
+      "img": "grangala.jpg",
+      "subtitle": "Классический стиль. Модель Grangala",
+      "colors": [
+        "7F8593",
+        "BFBEBC",
+        "DBCB9B",
+        "78676D"
+      ],
+      "delivery": "3 месяца",
+      "materials": "матовый лак МДФ, патинированный лак МДФ. Толщина 34 мм."
     },
     {
       "name": "Кухонный гарнитур Athena",
       "price": "940 000",
-      "img": "athena.jpg"
+      "img": "athena.jpg",
+      "subtitle": "Классический стиль. Модель Athena",
+      "colors": [
+        "7F8593",
+        "6B6855",
+        "645F5B",
+        "C9BCAC"
+      ],
+      "delivery": "3 месяца",
+      "materials": "Патинированный лакированный МДФ, толщиной 22 мм"
     },
     {
       "name": "Кухонный гарнитур Olympia",
       "price": "750 000",
-      "img": "olympia-2.jpg"
+      "img": "olympia-2.jpg",
+      "subtitle": "Классический стиль. Модель Olympia",
+      "colors": [
+        "AD9C58",
+        "807F7A",
+        "AF0E0E",
+        "CCBEB3"
+      ],
+      "delivery": "3 месяца",
+      "materials": "глянцевый лакированный МДФ. Толщина МДФ: 22 мм. Стекло: 4 мм. (стекло с текстурой кожи крокодила)."
     },
     {
       "name": "Кухонный гарнитур Olympia",
       "price": "850 000",
-      "img": "olympia.jpg"
+      "img": "olympia.jpg",
+      "subtitle": "Классический стиль. Модель Olympia",
+      "colors": [
+        "D5D6D8",
+        "293541",
+        "A6B4BF",
+        "5B504A"
+      ],
+      "delivery": "3 месяца",
+      "materials": "глянцевый лакированный МДФ. Толщина МДФ: 22 мм. Стекло: 4 мм. (стекло с текстурой кожи крокодила)."
     },
     {
       "name": "Кухонный гарнитур Ginevra",
       "price": "450 000",
-      "img": "ginevra.jpg"
+      "img": "ginevra.jpg",
+      "subtitle": "Классический стиль. Модель  Ginevra",
+      "colors": [
+        "FFFFFF",
+        "A79B8E",
+        "C8C9C4",
+        "5B504A"
+      ],
+      "delivery": "3 месяца",
+      "materials": "Лакированный матовый МДФ, толщиной 22 мм."
     }
   ]
 
@@ -37,4 +91,4 @@ section(id="catalog").catalog
   .container
     .catalog__container
       for item in catalogDatas
-        +product(item.name, item.img, item.price)
+        +product(item)

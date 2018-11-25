@@ -1,15 +1,14 @@
-.characteristics
-  .characteristics__title Современный стиль. Модель Canova  
-  .characteristics__types
-    .characteristics__subtitle.characteristics__subtitle_margin-bottom Доступные фасады
-    .characteristics__types-container
-      .characteristics__type.characteristics__type_color-676155
-      .characteristics__type.characteristics__type_color-D9D4D0
-      .characteristics__type.characteristics__type_color-5B5B5B
-      .characteristics__type.characteristics__type_color-A5988D
-  .characteristics__delivery
-    .characteristics__subtitle Сроки поставки:&nbsp;
-      span.characteristics__text 3 месяца
-  .characteristics__materials
-    .characteristics__subtitle Материалы:&nbsp;
-      span.characteristics__text шпонированный дуб, толщиной 23 мм
+mixin characteristics(subtitle, colors, delivery, materials)
+  .characteristics
+    .characteristics__title= subtitle 
+    .characteristics__types
+      .characteristics__subtitle.characteristics__subtitle_margin-bottom Популярные цвета фасадов
+      .characteristics__types-container
+        each color in colors
+          .characteristics__type(class="characteristics__type_color-" + color)
+    .characteristics__delivery
+      .characteristics__subtitle Сроки поставки:&nbsp;
+        span.characteristics__text= delivery
+    .characteristics__materials
+      .characteristics__subtitle Материалы:&nbsp;
+        span.characteristics__text= materials
