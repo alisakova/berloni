@@ -95,6 +95,9 @@ h3 {
 	}
 	line-height: 1.36;
 	margin: 0 0 rem(20);
+	@media (max-width: 540px) {
+		margin-bottom: 26px;
+	}
 }
 
 p {
@@ -122,6 +125,12 @@ img {
 @media (max-width: 768px) {
 	html {
 		font-size: 10px;
+	}
+}
+
+@media (max-width: 540px) {
+	html {
+		font-size: 14px;
 	}
 }
 

@@ -2,18 +2,18 @@
   background: url('../img/intro-bg.jpg') left center no-repeat;
   background-size: cover;
   margin-bottom: rem(27);
+  @media (max-width: 540px) {
+    background-image: url('../img/intro-bg-mobile.png');
+    background-position: center;
+    min-height: 461px;
+    margin-bottom: 0;
+    .intro__info {
+      display: none;
+    }
+  }
 }
 
 .intro__info {
   padding: rem(65 20 38 52);
   max-width: rem(386);
-}
-
-.intro__images {
-  flex-basis: 100%;
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
 }

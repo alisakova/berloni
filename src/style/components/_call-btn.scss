@@ -10,6 +10,9 @@
     size: rem(18);
     weight: 600;
   }
+  @media (max-width: 540px) {
+    display: none;
+  }
 }
 
 .call-btn__text {

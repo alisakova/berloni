@@ -1,6 +1,9 @@
 .nav {
   margin-bottom: rem(19);
   font-weight: 300;
+  @media (max-width: 540px) {
+    display: none;
+  }
 }
 
 .nav__container {
