@@ -22,21 +22,21 @@
 footer.footer
   .container
     .footer__content
-      .footer__col
+      .footer__col.footer__col_logo
         .footer__logo
           img(src="img/gray-logo.svg", alt="Логотип BERLONI")
-      .footer__col
+      .footer__col.footer__col_contacts
         .footer__contacts
           | 191144<br />
           | ул. Мытнинская, д. 29<br />
           a(href="tel:89117771218").footer__link 8 (911) 777 1218
           a(href="mailto:info@berloni-spb.com").footer__link info@berloni-spb.com
-      .footer__col
+      .footer__col.footer__col_socials
         .footer__social-icons
           for item in socialIcons
             a(href="").footer__social-icon
               img(src="img/social-icons/" + item.img + ".svg", alt= item.alt)
-      .footer__col
+      .footer__col.footer__col_links
         .footer__links
           for item in footerLinks
             a(href="").footer__link= item
