@@ -7,6 +7,6 @@ mixin product(item)
       span.product__price= item.price
       span.product__icon
         img(src="img/catalog/coin.svg", alt="Рубль")
-    button.product__show-more._show-more-btn
+    button.product__show-more._show-more-btn.accordion
     +characteristics(item.subtitle, item.colors, item.delivery, item.materials)
     

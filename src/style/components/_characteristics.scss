@@ -25,38 +25,16 @@ $types-colors: (
 
 
 .characteristics {
-  position: absolute;
-  left: calc(100% - 5px);
-  bottom: rem(42);
-  width: rem(350);
-  min-height: rem(308);
   padding: rem(16 25 11);
-  background: #fff;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid $border-color;
-  z-index: 10;
-  display: none;
-  &.active {
-    display: block;
+  @media (max-width: 600px) {
+    padding: 33px 41px 58px;
+    background: $border-color;
   }
-  &:after, &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 100%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  &:after {
-    bottom: 12px;
-    border-color: transparent #fff transparent transparent;
-    border-width: 10px;
-  }
-  &:before {
-    bottom: 11px;
-    border-color: transparent $border-color transparent transparent;
-    border-width: 11px;
+  @media (max-width: 370px) {
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
   }
 }
 
