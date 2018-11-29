@@ -36,10 +36,17 @@
 .call-modal__title {
   font-size: rem(18);
   margin-bottom: rem(45);
+  &_center {
+    text-align: center;
+  }
 }
 
 .call-modal__text {
   margin-bottom: rem(28);
+  &_center {
+    text-align: center;
+    margin-bottom: 47px;
+  }
 }
 
 .call-modal__form {

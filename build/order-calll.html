@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-direction" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <title>Эксклюзивный дилер BERLONI® в Санкт-Петербурге</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600|Roboto:300,400,400i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <div class="modal call-modal custom-modal" id="call-modal">
+    <a class="modal-close" href="" rel="modal:close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90158 8.00004L15.6062 2.29544C16.1313 1.77033 16.1313 0.918951 15.6062 0.393911C15.0811 -0.131204 14.2297 -0.131204 13.7046 0.393911L7.99997 6.09858L2.29531 0.393836C1.77019 -0.131279 0.918893 -0.131279 0.393779 0.393836C-0.13126 0.918951 -0.13126 1.77033 0.393779 2.29537L6.09844 7.99996L0.393779 13.7046C-0.13126 14.2297 -0.13126 15.0811 0.393779 15.6062C0.918893 16.1313 1.77019 16.1313 2.29531 15.6062L7.99997 9.90149L13.7046 15.6062C14.2297 16.1313 15.0811 16.1313 15.6062 15.6062C16.1313 15.081 16.1313 14.2297 15.6062 13.7046L9.90158 8.00004Z"
+        fill="#A19B9B" />
+      </svg>
+    </a>
+    <div class="call-modal__container">
+      <div class="call-modal__col call-modal__col_form">
+        <form class="form">
+          <div class="call-modal__title">Заказать обратный звонок</div>
+          <div class="call-modal__text">Мы перезвоним Вам через 2 минуты</div>
+          <div class="form__item">
+            <input class="form__input form__input_bordered" type="text" id="name-2" name="name-2" placeholder="Введите Ваше имя" required>
+          </div>
+          <div class="form__item">
+            <input class="form__input form__input_bordered" type="tel" id="tel-2" name="tel-2" placeholder="Введите Ваш телефон" required>
+          </div>
+          <button class="btn btn_submit _open-success-call-modal" type="submit">Отправить</button>
+        </form>
+        <div class="form__item form__item_no-max-width form__item_bg">
+          <label class="form__label checkbox" for="accept-2">Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных. Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
+            <input id="accept-2" type="checkbox"><span class="checkbox__checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="call-modal__col call-modal__col_img"></div>
+    </div>
+  </div>
+  <div class="modal custom-modal custom-modal_padding" id="success-modal">
+    <a class="modal-close" href="" rel="modal:close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90158 8.00004L15.6062 2.29544C16.1313 1.77033 16.1313 0.918951 15.6062 0.393911C15.0811 -0.131204 14.2297 -0.131204 13.7046 0.393911L7.99997 6.09858L2.29531 0.393836C1.77019 -0.131279 0.918893 -0.131279 0.393779 0.393836C-0.13126 0.918951 -0.13126 1.77033 0.393779 2.29537L6.09844 7.99996L0.393779 13.7046C-0.13126 14.2297 -0.13126 15.0811 0.393779 15.6062C0.918893 16.1313 1.77019 16.1313 2.29531 15.6062L7.99997 9.90149L13.7046 15.6062C14.2297 16.1313 15.0811 16.1313 15.6062 15.6062C16.1313 15.081 16.1313 14.2297 15.6062 13.7046L9.90158 8.00004Z"
+        fill="#A19B9B" />
+      </svg>
+    </a>
+    <div class="custom-modal__container">
+      <div class="custom-modal__title">Ваша заявка успешно отправлена!</div>
+      <div class="custom-modal__img">
+        <img src="img/success-modal-img.svg" alt="Ваша заявка успешно отправлена!">
+      </div>
+      <div class="custom-modal__art-border custom-modal__art-border_success-call-modal"></div>
+    </div>
+  </div>
+  <div class="modal custom-modal custom-modal_padding" id="success-calc-modal">
+    <a class="modal-close" href="" rel="modal:close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90158 8.00004L15.6062 2.29544C16.1313 1.77033 16.1313 0.918951 15.6062 0.393911C15.0811 -0.131204 14.2297 -0.131204 13.7046 0.393911L7.99997 6.09858L2.29531 0.393836C1.77019 -0.131279 0.918893 -0.131279 0.393779 0.393836C-0.13126 0.918951 -0.13126 1.77033 0.393779 2.29537L6.09844 7.99996L0.393779 13.7046C-0.13126 14.2297 -0.13126 15.0811 0.393779 15.6062C0.918893 16.1313 1.77019 16.1313 2.29531 15.6062L7.99997 9.90149L13.7046 15.6062C14.2297 16.1313 15.0811 16.1313 15.6062 15.6062C16.1313 15.081 16.1313 14.2297 15.6062 13.7046L9.90158 8.00004Z"
+        fill="#A19B9B" />
+      </svg>
+    </a>
+    <div class="custom-modal__container">
+      <div class="custom-modal__title">Ваша заявка на расчёт успешно отправлена!</div>
+      <div class="custom-modal__img">
+        <img src="img/calc-modal-img.svg" alt="Ваша заявка на расчёт успешно отправлена!">
+      </div>
+      <div class="custom-modal__art-border custom-modal__art-border_success-calc-modal"></div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__col header__col_padding-top header__col_title">
+          <h1>Эксклюзивный дилер BERLONI®<br />в Санкт-Петербурге</h1><a class="header__tel" href="tel:89117771218">8 (911) 777 1218</a>
+        </div>
+        <div class="header__col header__col_logo">
+          <div class="header__burger">
+            <button class="burger _open-menu"></button>
+          </div>
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="Логотип BERLONI">
+          </div>
+        </div>
+        <div class="header__col header__col_big-padding-top header__col_order-call"><a class="btn" href="#call-modal" rel="modal:open">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="nav nav_desktop">
+    <div class="container">
+      <div class="nav__container">
+        <div class="nav__item"> <a class="nav__link _scroll-btn" href="#features">Преимущества</a>
+        </div>
+        <div class="nav__item"> <a class="nav__link _scroll-btn" href="#catalog">Цены</a>
+        </div>
+        <div class="nav__item"> <a class="nav__link _scroll-btn" href="#reviews">Отзывы</a>
+        </div>
+        <div class="nav__item"> <a class="nav__link _scroll-btn" href="#purchase">Процесс покупки</a>
+        </div>
+        <div class="nav__item"> <a class="nav__link _scroll-btn" href="#contacts">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="menu _menu">
+    <button class="menu__close _close-menu"></button>
+    <nav class="nav nav_mobile">
+      <div class="container">
+        <div class="nav__container">
+          <div class="nav__item"> <a class="nav__link _scroll-btn" href="#features">Преимущества</a>
+          </div>
+          <div class="nav__item"> <a class="nav__link _scroll-btn" href="#catalog">Цены</a>
+          </div>
+          <div class="nav__item"> <a class="nav__link _scroll-btn" href="#reviews">Отзывы</a>
+          </div>
+          <div class="nav__item"> <a class="nav__link _scroll-btn" href="#purchase">Процесс покупки</a>
+          </div>
+          <div class="nav__item"> <a class="nav__link _scroll-btn" href="#contacts">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__container">
+          <div class="intro__info">
+            <ul class="features-info">
+              <li class="features-info__item features-info__item_size-icon">Выезд замерщика на обьект</li>
+              <li class="features-info__item features-info__item_design-icon">Бесплатный дизайн-проект</li>
+              <li class="features-info__item features-info__item_garant-icon">Гарантия на работы и комплектующие</li>
+            </ul><a class="call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__text">Я хочу сделать замер</span><span class="call-btn__icon"> <img src="img/tel.svg" alt="Иконка телефона"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features-info features-info_mobile">
+      <ul>
+        <li class="features-info__item features-info__item_mobile features-info__item_mobile_size-icon-mobile">Выезд замерщика на обьект</li>
+        <li class="features-info__item features-info__item_mobile features-info__item_mobile_design-icon-mobile">Бесплатный дизайн-проект</li>
+        <li class="features-info__item features-info__item_mobile features-info__item_mobile_garant-icon-mobile">Гарантия на работы и комплектующие</li>
+      </ul>
+    </section>
+    <section class="features" id="features">
+      <div class="title">
+        <h2>Преимущества</h2>
+      </div>
+      <div class="container">
+        <div class="features__items">
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="img/features/feature-0.svg" alt="Преимущество">
+            </div>
+            <div class="features__descr">Упаковка каждого элемента</div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="img/features/feature-1.svg" alt="Преимущество">
+            </div>
+            <div class="features__descr">Провека каждой детали</div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="img/features/feature-2.svg" alt="Преимущество">
+            </div>
+            <div class="features__descr">Гарантия кухни 10 лет</div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="img/features/feature-3.svg" alt="Преимущество">
+            </div>
+            <div class="features__descr">100% Италия</div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="img/features/feature-4.svg" alt="Преимущество">
+            </div>
+            <div class="features__descr">Фасады 22 мм</div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="img/features/feature-5.svg" alt="Преимущество">
+            </div>
+            <div class="features__descr">Бесшумные петли</div>
+          </div>
+        </div>
+      </div>
+      <a class="mouse-btn _scroll-btn" href="#catalog"></a>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="title">
+        <h2>Стоимость кухонных&nbsp;гарнитуров</h2>
+      </div>
+      <div class="container">
+        <div class="catalog__container">
+          <div class="product">
+            <div class="product__name">Кухонный гарнитур Canova</div>
+            <div class="product__img">
+              <img src="img/catalog/canova.jpg" alt="Кухонный гарнитур Canova">
+            </div>
+            <div class="product__price-container"><span class="product__price">540 000</span><span class="product__icon"><img src="img/catalog/coin.svg" alt="Рубль"></span>
+            </div>
+            <button class="product__show-more _show-more-btn accordion"></button>
+            <div class="panel">
+              <div class="characteristics">
+                <div class="characteristics__title">Современный стиль. Модель Canova</div>
+                <div class="characteristics__types">
+                  <div class="characteristics__subtitle characteristics__subtitle_margin-bottom">Популярные цвета фасадов</div>
+                  <div class="characteristics__types-container">
+                    <div class="characteristics__type characteristics__type_color-676155"></div>
+                    <div class="characteristics__type characteristics__type_color-D9D4D0"></div>
+                    <div class="characteristics__type characteristics__type_color-5B5B5B"></div>
+                    <div class="characteristics__type characteristics__type_color-A5988D"></div>
+                  </div>
+                </div>
+                <div class="characteristics__delivery">
+                  <div class="characteristics__subtitle">Сроки поставки:&nbsp;<span class="characteristics__text">3 месяца</span>
+                  </div>
+                </div>
+                <div class="characteristics__materials">
+                  <div class="characteristics__subtitle">Материалы:&nbsp;<span class="characteristics__text">шпонированный дуб, толщиной 23 мм</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__name">Кухонный гарнитур Grangala</div>
+            <div class="product__img">
+              <img src="img/catalog/grangala.jpg" alt="Кухонный гарнитур Grangala">
+            </div>
+            <div class="product__price-container"><span class="product__price">740 000</span><span class="product__icon"><img src="img/catalog/coin.svg" alt="Рубль"></span>
+            </div>
+            <button class="product__show-more _show-more-btn accordion"></button>
+            <div class="panel">
+              <div class="characteristics">
+                <div class="characteristics__title">Классический стиль. Модель Grangala</div>
+                <div class="characteristics__types">
+                  <div class="characteristics__subtitle characteristics__subtitle_margin-bottom">Популярные цвета фасадов</div>
+                  <div class="characteristics__types-container">
+                    <div class="characteristics__type characteristics__type_color-7F8593"></div>
+                    <div class="characteristics__type characteristics__type_color-BFBEBC"></div>
+                    <div class="characteristics__type characteristics__type_color-DBCB9B"></div>
+                    <div class="characteristics__type characteristics__type_color-78676D"></div>
+                  </div>
+                </div>
+                <div class="characteristics__delivery">
+                  <div class="characteristics__subtitle">Сроки поставки:&nbsp;<span class="characteristics__text">3 месяца</span>
+                  </div>
+                </div>
+                <div class="characteristics__materials">
+                  <div class="characteristics__subtitle">Материалы:&nbsp;<span class="characteristics__text">матовый лак МДФ, патинированный лак МДФ. Толщина 34 мм.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__name">Кухонный гарнитур Athena</div>
+            <div class="product__img">
+              <img src="img/catalog/athena.jpg" alt="Кухонный гарнитур Athena">
+            </div>
+            <div class="product__price-container"><span class="product__price">940 000</span><span class="product__icon"><img src="img/catalog/coin.svg" alt="Рубль"></span>
+            </div>
+            <button class="product__show-more _show-more-btn accordion"></button>
+            <div class="panel">
+              <div class="characteristics">
+                <div class="characteristics__title">Классический стиль. Модель Athena</div>
+                <div class="characteristics__types">
+                  <div class="characteristics__subtitle characteristics__subtitle_margin-bottom">Популярные цвета фасадов</div>
+                  <div class="characteristics__types-container">
+                    <div class="characteristics__type characteristics__type_color-7F8593"></div>
+                    <div class="characteristics__type characteristics__type_color-6B6855"></div>
+                    <div class="characteristics__type characteristics__type_color-645F5B"></div>
+                    <div class="characteristics__type characteristics__type_color-C9BCAC"></div>
+                  </div>
+                </div>
+                <div class="characteristics__delivery">
+                  <div class="characteristics__subtitle">Сроки поставки:&nbsp;<span class="characteristics__text">3 месяца</span>
+                  </div>
+                </div>
+                <div class="characteristics__materials">
+                  <div class="characteristics__subtitle">Материалы:&nbsp;<span class="characteristics__text">Патинированный лакированный МДФ, толщиной 22 мм</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__name">Кухонный гарнитур Olympia</div>
+            <div class="product__img">
+              <img src="img/catalog/olympia-2.jpg" alt="Кухонный гарнитур Olympia">
+            </div>
+            <div class="product__price-container"><span class="product__price">750 000</span><span class="product__icon"><img src="img/catalog/coin.svg" alt="Рубль"></span>
+            </div>
+            <button class="product__show-more _show-more-btn accordion"></button>
+            <div class="panel">
+              <div class="characteristics">
+                <div class="characteristics__title">Классический стиль. Модель Olympia</div>
+                <div class="characteristics__types">
+                  <div class="characteristics__subtitle characteristics__subtitle_margin-bottom">Популярные цвета фасадов</div>
+                  <div class="characteristics__types-container">
+                    <div class="characteristics__type characteristics__type_color-AD9C58"></div>
+                    <div class="characteristics__type characteristics__type_color-807F7A"></div>
+                    <div class="characteristics__type characteristics__type_color-AF0E0E"></div>
+                    <div class="characteristics__type characteristics__type_color-CCBEB3"></div>
+                  </div>
+                </div>
+                <div class="characteristics__delivery">
+                  <div class="characteristics__subtitle">Сроки поставки:&nbsp;<span class="characteristics__text">3 месяца</span>
+                  </div>
+                </div>
+                <div class="characteristics__materials">
+                  <div class="characteristics__subtitle">Материалы:&nbsp;<span class="characteristics__text">глянцевый лакированный МДФ. Толщина МДФ: 22 мм. Стекло: 4 мм. (стекло с текстурой кожи крокодила).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__name">Кухонный гарнитур Olympia</div>
+            <div class="product__img">
+              <img src="img/catalog/olympia.jpg" alt="Кухонный гарнитур Olympia">
+            </div>
+            <div class="product__price-container"><span class="product__price">850 000</span><span class="product__icon"><img src="img/catalog/coin.svg" alt="Рубль"></span>
+            </div>
+            <button class="product__show-more _show-more-btn accordion"></button>
+            <div class="panel">
+              <div class="characteristics">
+                <div class="characteristics__title">Классический стиль. Модель Olympia</div>
+                <div class="characteristics__types">
+                  <div class="characteristics__subtitle characteristics__subtitle_margin-bottom">Популярные цвета фасадов</div>
+                  <div class="characteristics__types-container">
+                    <div class="characteristics__type characteristics__type_color-D5D6D8"></div>
+                    <div class="characteristics__type characteristics__type_color-293541"></div>
+                    <div class="characteristics__type characteristics__type_color-A6B4BF"></div>
+                    <div class="characteristics__type characteristics__type_color-5B504A"></div>
+                  </div>
+                </div>
+                <div class="characteristics__delivery">
+                  <div class="characteristics__subtitle">Сроки поставки:&nbsp;<span class="characteristics__text">3 месяца</span>
+                  </div>
+                </div>
+                <div class="characteristics__materials">
+                  <div class="characteristics__subtitle">Материалы:&nbsp;<span class="characteristics__text">глянцевый лакированный МДФ. Толщина МДФ: 22 мм. Стекло: 4 мм. (стекло с текстурой кожи крокодила).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__name">Кухонный гарнитур Ginevra</div>
+            <div class="product__img">
+              <img src="img/catalog/ginevra.jpg" alt="Кухонный гарнитур Ginevra">
+            </div>
+            <div class="product__price-container"><span class="product__price">450 000</span><span class="product__icon"><img src="img/catalog/coin.svg" alt="Рубль"></span>
+            </div>
+            <button class="product__show-more _show-more-btn accordion"></button>
+            <div class="panel">
+              <div class="characteristics">
+                <div class="characteristics__title">Классический стиль. Модель Ginevra</div>
+                <div class="characteristics__types">
+                  <div class="characteristics__subtitle characteristics__subtitle_margin-bottom">Популярные цвета фасадов</div>
+                  <div class="characteristics__types-container">
+                    <div class="characteristics__type characteristics__type_color-FFFFFF"></div>
+                    <div class="characteristics__type characteristics__type_color-A79B8E"></div>
+                    <div class="characteristics__type characteristics__type_color-C8C9C4"></div>
+                    <div class="characteristics__type characteristics__type_color-5B504A"></div>
+                  </div>
+                </div>
+                <div class="characteristics__delivery">
+                  <div class="characteristics__subtitle">Сроки поставки:&nbsp;<span class="characteristics__text">3 месяца</span>
+                  </div>
+                </div>
+                <div class="characteristics__materials">
+                  <div class="characteristics__subtitle">Материалы:&nbsp;<span class="characteristics__text">Лакированный матовый МДФ, толщиной 22 мм.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calculation">
+      <div class="container">
+        <div class="calculation__form">
+          <h3>Заказать расчёт онлайн и получить скидку&nbsp;15%</h3>
+          <div class="calculation__subtitle">Мы перезвоним Вам в течении 2-х минут</div>
+          <form class="form">
+            <div class="form__item">
+              <input class="form__input" type="text" id="name-1" name="name-1" placeholder="Ваше имя" required>
+            </div>
+            <div class="form__item">
+              <input class="form__input" type="tel" id="tel-1" name="tel-1" placeholder="Ваш номер" required>
+            </div>
+            <button class="btn btn_submit _open-calc-modal" type="submit">Рассчитать</button>
+            <div class="form__item form__item_no-max-width">
+              <label class="form__label checkbox" for="accept-1">Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных. Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
+                <input id="accept-1" type="checkbox"><span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="title">
+        <h2>Отзывы покупателей</h2>
+      </div>
+      <div class="container">
+        <div class="reviews__slider reviews-slider">
+          <div>
+            <div class="reviews-slider__photo">
+              <img src="img/reviews/review-0.jpg" alt="Фотография">
+            </div>
+            <p class="reviews-slider__text">Для меня, как архитектора, выбор был очевиден. Никаких компромиссов в качестве. Кухни <span class='italic'>Berloni</span>, - это как раз тот элемент интерьера, который подчёркивает элегантность Вашей работы в целом. Утончённые линии и строгость,
+              в некотором роде...монументальность, - не что иное, как проявление утерянного в советское время, эстетического восприятия архитектуры, мебели и форм.</p>
+          </div>
+          <div>
+            <div class="reviews-slider__photo">
+              <img src="img/reviews/review-1.jpg" alt="Фотография">
+            </div>
+            <p class="reviews-slider__text">Вначале я не хотела оформлять интерьер с таким авторским подходом к кухонному пространству, но мне действительно нравится собирать друзей дома, часами болтать с подругами, слушать музыку и готовить. С кухнями <span class='italic'>Berloni</span> я
+              почувствовала ритм жизни ещё острее! Друзья были в восторге! Ещё раз убедилась, что мебель из масс-маркетов, - это не про меня. Люблю стиль во всём!</p>
+          </div>
+          <div>
+            <div class="reviews-slider__photo">
+              <img src="img/reviews/review-2.jpg" alt="Фотография">
+            </div>
+            <p class="reviews-slider__text">Хорошая кухня, - это забота о своей семье. Я много работаю и уют дома очень важен. Не пожалел ни разу, что обратился в салон и нам с женой сделали действительно хороший проект с продуманной эргономикой и стилем. Сборка кухни была быстрой и
+              качественной. В свой загородный дом я тоже буду покупать только <span class='italic'>Berloni</span>, хочу чтобы это стало одной из семейных традиций, - только качественная итальнская мебель.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="purchase" id="purchase">
+      <div class="title">
+        <h2>Процесс покупки</h2>
+      </div>
+      <div class="container">
+        <div class="purchase__items">
+          <div class="purchase__item">
+            <div class="purchase__icon">
+              <img src="img/purchase/purchase-0.svg" alt="Процесс покупки">
+            </div>
+            <div class="purchase__descr">Оставьте заявку на сайте, наш специалист свяжется с Вами в течении 2 минут</div>
+          </div>
+          <div class="purchase__item">
+            <div class="purchase__icon">
+              <img src="img/purchase/purchase-1.svg" alt="Процесс покупки">
+            </div>
+            <div class="purchase__descr">Посещение нашего шоу-рума позволит делально ознакомится с итальянской мебелью</div>
+          </div>
+          <div class="purchase__item">
+            <div class="purchase__icon">
+              <img src="img/purchase/purchase-2.svg" alt="Процесс покупки">
+            </div>
+            <div class="purchase__descr">После совершения покупки, кухня собирается в Италии и отправляется в Россию</div>
+          </div>
+          <div class="purchase__item">
+            <div class="purchase__icon">
+              <img src="img/purchase/purchase-3.svg" alt="Процесс покупки">
+            </div>
+            <div class="purchase__descr">Мы осуществляем сборку гарнитура в соответвии с техничсекими характеристиками каждой модели</div>
+          </div>
+          <div class="purchase__item">
+            <div class="purchase__icon">
+              <img src="img/purchase/purchase-4.svg" alt="Процесс покупки">
+            </div>
+            <div class="purchase__descr">Гарантия качества от производителя 10 лет.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="call-order">
+      <div class="title">
+        <h2>Вызвать замерщика для расчёта</h2>
+      </div>
+      <div class="container">
+        <div class="call-order__container">
+          <form class="call-order__form form">
+            <div class="form__item">
+              <input class="form__input" type="text" id="name" name="name" placeholder="Введите Ваше имя" required>
+            </div>
+            <div class="form__item">
+              <input class="form__input" type="tel" id="tel" name="tel" placeholder="Ваш телефон" required>
+            </div>
+            <div class="form__item">
+              <input class="form__input" type="text" id="call-time" name="call-time" placeholder="Удобное время для звонка" required>
+            </div>
+            <button class="btn btn_submit" type="submit">Вызвать замерщика</button>
+            <div class="form__item form__item_no-max-width">
+              <label class="form__label checkbox" for="accept">Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных. Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
+                <input id="accept" type="checkbox"><span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+          </form>
+          <div class="call-order__img">
+            <img src="img/call-order-img.jpg" alt="Интерьер">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="title">
+        <h2>Контакты</h2>
+      </div>
+      <div class="contacts__container">
+        <div class="container">
+          <div class="contacts__content">
+            <div class="contacts__item">Эксклюзивный дилер BERLONI®
+              <br />в Санкт-Петербурге</div>
+            <div class="contacts__item contacts__item_font-weight-300">Мы работаем без выходных
+              <br />с 10.00 до 20.00</div>
+            <div class="contacts__item"> <a class="contacts__link" href="tel:89117771218">8 (911) 777 1218</a>
+            </div>
+            <div class="contacts__item">ул. Мытнинская, д. 29<a class="contacts__link" href="mailto:info@berloni-spb.com">info@berloni-spb.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__img">
+          <img src="img/contacts-img.jpg" alt="Интерьер">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__col footer__col_logo">
+          <div class="footer__logo">
+            <img src="img/gray-logo.svg" alt="Логотип BERLONI">
+          </div>
+        </div>
+        <div class="footer__col footer__col_contacts">
+          <div class="footer__contacts">
+            191144
+            <br />ул. Мытнинская, д. 29
+            <br /><a class="footer__link" href="tel:89117771218">8 (911) 777 1218</a><a class="footer__link" href="mailto:info@berloni-spb.com">info@berloni-spb.com</a>
+          </div>
+        </div>
+        <div class="footer__col footer__col_socials">
+          <div class="footer__social-icons">
+            <a class="footer__social-icon" href="">
+              <img src="img/social-icons/vk.svg" alt="Вконтакте">
+            </a>
+            <a class="footer__social-icon" href="">
+              <img src="img/social-icons/facebook.svg" alt="Facebook">
+            </a>
+            <a class="footer__social-icon" href="">
+              <img src="img/social-icons/instagram.svg" alt="Instagram">
+            </a>
+          </div>
+        </div>
+        <div class="footer__col footer__col_links">
+          <div class="footer__links"><a class="footer__link" href="">Полный каталог</a><a class="footer__link" href="">О фабрике</a><a class="footer__link" href="">Приемущества</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

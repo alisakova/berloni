@@ -1,0 +1,24 @@
+.order-page {
+  padding-top: 60px;
+  .form {
+    padding: 0 20px;
+  }
+  .form__input {
+    height: 50px;
+  }
+  .form__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+    &:nth-last-child(2) {
+      margin-bottom: 32px;
+    }
+  }
+  .btn {
+    width: 100%;
+    padding: {
+      top: 15px;
+      bottom: 15px;
+    }
+  }
+}
