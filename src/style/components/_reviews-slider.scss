@@ -16,6 +16,12 @@
     padding: rem(17 97 16 120);
     background: #fff;
     margin: rem(10);
+    @media (max-width: 540px) {
+      flex-direction: column;
+      box-shadow: none;
+      margin: 10px;
+      padding: 0;
+    }
   }
 }
 
@@ -51,6 +57,10 @@
   cursor: pointer;
   z-index: 10;
   background: transparent;
+  @media (max-width: 540px) {
+    transform: none;
+    top: 70px;
+  }
 }
 
 .reviews-slider__text {
@@ -60,10 +70,20 @@
       weight: 400;
     }
   }
+  @media (max-width: 540px) {
+    box-shadow: 4px 4px 10px $border-color;
+    padding: 24px 20px;
+  }
 }
 
 .reviews-slider__photo {
   max-width: rem(167);
   min-width: rem(167);
   margin-right: rem(37);
+  @media (max-width: 540px) {
+    margin: {
+      right: 0;
+      bottom: 58px;
+    }
+  }
 }
