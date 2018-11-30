@@ -4,16 +4,15 @@
   padding: 101px 20px 20px 59px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -900px;
   right: 0;
   bottom: 0;
   background: $light-gray;
   z-index: -1;
   transition: all 0.5s;
   overflow-x: hidden;
-  opacity: 0;
   &.active {
-    opacity: 1;
+    left: 0;
     z-index: 1000;
     transition: all 0.5s;
   }
