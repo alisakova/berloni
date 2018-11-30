@@ -30,6 +30,9 @@
   &_img {
     background: url("../img/call-modal-img.svg") center center no-repeat;
     min-width: rem(327);
+    @media (max-width: 1080px) {
+      background-size: 60%;
+    }
   }
 }
 

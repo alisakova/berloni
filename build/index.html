@@ -52,7 +52,7 @@
       <div class="custom-modal__img">
         <img src="img/success-modal-img.svg" alt="Ваша заявка успешно отправлена!">
       </div>
-      <div class="custom-modal__art-border custom-modal__art-border_success-call-modal"></div>
+      <div class="art-border art-border_success-call-modal"></div>
     </div>
   </div>
   <div class="modal custom-modal custom-modal_padding" id="success-calc-modal">
@@ -67,7 +67,22 @@
       <div class="custom-modal__img">
         <img src="img/calc-modal-img.svg" alt="Ваша заявка на расчёт успешно отправлена!">
       </div>
-      <div class="custom-modal__art-border custom-modal__art-border_success-calc-modal"></div>
+      <div class="art-border art-border_success-calc-modal"></div>
+    </div>
+  </div>
+  <div class="modal custom-modal custom-modal_padding" id="success-master-modal">
+    <a class="modal-close" href="" rel="modal:close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90158 8.00004L15.6062 2.29544C16.1313 1.77033 16.1313 0.918951 15.6062 0.393911C15.0811 -0.131204 14.2297 -0.131204 13.7046 0.393911L7.99997 6.09858L2.29531 0.393836C1.77019 -0.131279 0.918893 -0.131279 0.393779 0.393836C-0.13126 0.918951 -0.13126 1.77033 0.393779 2.29537L6.09844 7.99996L0.393779 13.7046C-0.13126 14.2297 -0.13126 15.0811 0.393779 15.6062C0.918893 16.1313 1.77019 16.1313 2.29531 15.6062L7.99997 9.90149L13.7046 15.6062C14.2297 16.1313 15.0811 16.1313 15.6062 15.6062C16.1313 15.081 16.1313 14.2297 15.6062 13.7046L9.90158 8.00004Z"
+        fill="#A19B9B" />
+      </svg>
+    </a>
+    <div class="custom-modal__container">
+      <div class="custom-modal__title">Ваша заявка на вызов замерщика успешно отправлена!</div>
+      <div class="custom-modal__img">
+        <img src="img/calc-modal-img.svg" alt="Ваша заявка на вызов замерщика успешно отправлена!">
+      </div>
+      <div class="art-border art-border_success-calc-modal"></div>
     </div>
   </div>
   <header class="header">
@@ -84,7 +99,8 @@
             <img src="img/logo.svg" alt="Логотип BERLONI">
           </div>
         </div>
-        <div class="header__col header__col_big-padding-top header__col_order-call"><a class="btn" href="#call-modal" rel="modal:open">Заказать звонок</a>
+        <div class="header__col header__col_big-padding-top header__col_order-call">
+          <button class="btn _open-order-call-modal">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -133,7 +149,9 @@
               <li class="features-info__item features-info__item_size-icon">Выезд замерщика на обьект</li>
               <li class="features-info__item features-info__item_design-icon">Бесплатный дизайн-проект</li>
               <li class="features-info__item features-info__item_garant-icon">Гарантия на работы и комплектующие</li>
-            </ul><a class="call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__text">Я хочу сделать замер</span><span class="call-btn__icon"> <img src="img/tel.svg" alt="Иконка телефона"></span></a>
+            </ul>
+            <button class="call-btn _open-order-call-modal"><span class="call-btn__text">Я хочу сделать замер</span><span class="call-btn__icon"> <img src="img/tel.svg" alt="Иконка телефона"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -398,7 +416,7 @@
             <div class="form__item">
               <input class="form__input" type="tel" id="tel-1" name="tel-1" placeholder="Ваш номер" required>
             </div>
-            <button class="btn btn_submit _open-calc-modal" type="submit">Рассчитать</button>
+            <button class="btn btn_submit _open-calc-modal" type="submit">Рассчитать</button><a class="btn btn_submit btn-link" href="success-calc.html">Рассчитать</a>
             <div class="form__item form__item_no-max-width">
               <label class="form__label checkbox" for="accept-1">Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных. Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
                 <input id="accept-1" type="checkbox"><span class="checkbox__checkmark"></span>
@@ -493,7 +511,7 @@
             <div class="form__item">
               <input class="form__input" type="text" id="call-time" name="call-time" placeholder="Удобное время для звонка" required>
             </div>
-            <button class="btn btn_submit" type="submit">Вызвать замерщика</button>
+            <button class="btn btn_submit _open-master-modal" type="submit">Вызвать замерщика</button><a class="btn btn_submit btn-link" href="success-call-master.html">Вызвать замерщика</a>
             <div class="form__item form__item_no-max-width">
               <label class="form__label checkbox" for="accept">Отправляя нам заявку, Вы даете согласие на обработку своих персональных данных. Ваши данные не будут переданы 3-м лицам. Мы заботимся о конфиденциальности данных своих клиентов.
                 <input id="accept" type="checkbox"><span class="checkbox__checkmark"></span>

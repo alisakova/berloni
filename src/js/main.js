@@ -20,6 +20,18 @@ $("._open-calc-modal").click(function(event) {
   return false;
 });
 
+$("._open-master-modal").click(function(event) {
+  event.preventDefault();
+  $("#success-master-modal").modal();
+  return false;
+});
+
+$("._open-order-call-modal").click(function(event) {
+  event.preventDefault();
+  $("#call-modal").modal();
+  return false;
+});
+
 var characteristicsBlocks = document.querySelectorAll(".panel");
 var showMoreBtns = document.querySelectorAll("._show-more-btn");
 var body = document.querySelector("body");

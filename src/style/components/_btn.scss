@@ -17,4 +17,17 @@
     background: transparent;
     margin-bottom: rem(36);
   }
+  &._open-calc-modal,
+  &._open-master-modal {
+    @media (max-width: 540px) {
+      display: none;
+    }
+  }
+}
+
+.btn-link {
+  display: inline-block;
+  @media (min-width: 541px) {
+    display: none;
+  }
 }

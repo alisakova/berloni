@@ -21,7 +21,7 @@ section.intro
         ul.features-info
           for item in introItems
             li.features-info__item(class="features-info__item_" + item.class)= item.text
-        a(href="#call-modal", rel="modal:open").call-btn
+        button.call-btn._open-order-call-modal
           span.call-btn__text Я хочу сделать замер
           span.call-btn__icon 
             img(src="img/tel.svg" alt="Иконка телефона")
