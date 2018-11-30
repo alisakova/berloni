@@ -95,6 +95,7 @@
     left: rem(71);
     bottom: rem(15);
   }
+  white-space: nowrap;
   @media (max-width: 768px) {
     margin-left: 0;
   }
