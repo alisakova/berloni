@@ -2,21 +2,24 @@
   var socialIcons = [
     {
       "alt": "Вконтакте",
-      "img": "vk"
+      "img": "vk",
+      "href": "https://vk.com/berlonispb"
     },
     {
       "alt": "Facebook",
-      "img": "facebook"
+      "img": "facebook",
+      "href": "https://www.facebook.com/berloni.spb/"
     },
     {
       "alt": "Instagram",
-      "img": "instagram"
+      "img": "instagram",
+      "href": "https://www.instagram.com/berloni.spb/"
     }
   ];
   var footerLinks = [
     "Полный каталог",
     "О фабрике",
-    "Приемущества"
+    "Преимущества"
   ]
 
 footer.footer
@@ -34,7 +37,7 @@ footer.footer
       .footer__col.footer__col_socials
         .footer__social-icons
           for item in socialIcons
-            a(href="").footer__social-icon
+            a(href= socialIcons.href).footer__social-icon
               img(src="img/social-icons/" + item.img + ".svg", alt= item.alt)
       .footer__col.footer__col_links
         .footer__links
