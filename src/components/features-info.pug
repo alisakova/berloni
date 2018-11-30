@@ -1,22 +1,22 @@
 -
-  var introItemsMobile = [
+  var introItems = [
     {
-      "class": "size-icon-mobile",
+      "class": "size-icon",
       "text": "Выезд замерщика на обьект"
     },
     {
-      "class": "design-icon-mobile",
+      "class": "design-icon",
       "text": "Бесплатный дизайн-проект"
     },
     {
-      "class": "garant-icon-mobile",
+      "class": "garant-icon",
       "text": "Гарантия на работы и комплектующие"
     }
   ]
-
-section.features-info.features-info_mobile
+  
+.features-info.features-info_mobile
   ul
-    for item in introItemsMobile
-      li.features-info__item.features-info__item_mobile(class="features-info__item_mobile_" + item.class)= item.text
+    for item in introItems
+      li.features-info__item.features-info__item_mobile(class="features-info__item_mobile features-info__item_" + item.class)= item.text
 
   

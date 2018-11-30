@@ -23,6 +23,9 @@
   .container {
     padding: 0;
   }
+  @media (min-width: 541px) {
+    display: none;
+  }
 }
 
 .menu__close {
