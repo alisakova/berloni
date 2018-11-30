@@ -46,7 +46,7 @@ footer.footer
       .footer__col.footer__col_socials
         .footer__social-icons
           for item in socialIcons
-            a(href= socialIcons.href).footer__social-icon
+            a(href= item.href, target="_blank").footer__social-icon
               img(src="img/social-icons/" + item.img + ".svg", alt= item.alt)
       .footer__col.footer__col_links
         .footer__links
