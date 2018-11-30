@@ -17,9 +17,18 @@
     }
   ];
   var footerLinks = [
-    "Полный каталог",
-    "О фабрике",
-    "Преимущества"
+    {
+      "name": "Полный катало",
+      "href": "http://berloni-spb.com/katalog"
+    },
+    {
+      "name": "О фабрике",
+      "href": "http://berloni-spb.com/o-fabrike"
+    },
+    {
+      "name": "Преимущества",
+      "href": "http://berloni-spb.com/preimushchestva"
+    }
   ]
 
 footer.footer
@@ -42,4 +51,4 @@ footer.footer
       .footer__col.footer__col_links
         .footer__links
           for item in footerLinks
-            a(href="").footer__link= item
+            a(href= item.href).footer__link= item.name
