@@ -1,5 +1,5 @@
 .contacts {
-  margin-bottom: rem(22);
+  margin-bottom: rem(46);
   border-bottom: 1px solid $border-color;
   .title {
     margin-bottom: 0;
@@ -26,6 +26,11 @@
 
 .contacts__container {
   position: relative;
+  background: url("../img/contacts-img.jpg") no-repeat center center;
+  background-size: cover;
+  @media (max-width: 769px) {
+    background: none;
+  }
 }
 
 .contacts__item {
@@ -44,7 +49,6 @@
 }
 
 .contacts__link {
-  display: block;
   &:hover {
     color: #000;
   }

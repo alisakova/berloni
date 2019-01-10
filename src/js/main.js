@@ -40,7 +40,8 @@ if (window.innerWidth > 600) {
   showMoreBtns.forEach(function(el) {
     el.addEventListener("click", function(e) {
       e.stopPropagation();
-      var characteristics = el.nextElementSibling;
+      var parent = el.closest(".product-container");
+      var characteristics = parent.querySelector(".panel");
       characteristicsBlocks.forEach(function(block) {
         if (block.classList.contains("active") && block !== characteristics) {
           block.classList.remove("active");

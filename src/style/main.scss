@@ -111,6 +111,10 @@ p {
 	margin: 0;
 }
 
+.bold {
+	font-weight: 400;
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -162,3 +166,5 @@ img {
 @import "components/burger";
 @import "components/order-page";
 @import "components/art-border";
+@import "components/about";
+@import "components/map";

@@ -1,7 +1,8 @@
 .intro {
   background: url('../img/intro-bg.jpg') left center no-repeat;
   background-size: cover;
-  margin-bottom: rem(27);
+  margin-bottom: rem(124);
+  position: relative;
   @media (min-width: 1500px) {
     background-size: 120%;
   }
@@ -9,7 +10,7 @@
     background-size: 130%;
   }
   @media (max-width: 540px) {
-    background-image: url('../img/intro-bg-mobile.png');
+    background-image: url('../img/intro-bg-mobile.jpg');
     background-position: center;
     min-height: 461px;
     margin-bottom: 0;

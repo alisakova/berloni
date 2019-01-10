@@ -8,7 +8,7 @@
   bottom: rem(-43);
   transform: translateX(-50%);
   animation: mouse-icon-move 2s infinite;
-  @media (max-width: 768px) {
+  @media (max-width: 540px) {
     display: none;
   }
 }

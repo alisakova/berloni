@@ -3,19 +3,24 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   margin-top: 24px;
-  // min-height: 0;
   @media (min-width: 601px) {
     display: none;
     position: absolute;
     z-index: 10;
-    left: calc(100% - 5px);
-    bottom: rem(21);
+    left: calc(100% - 15px);
+    bottom: rem(30);
     width: rem(350);
     min-height: rem(308);
     overflow: visible;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid $border-color;
     background: #fff;
+    @media (max-width: 1080px) {
+      bottom: 22px;
+    }
+    @media (max-width: 768px) {
+      bottom: 15px;
+    }
     &.active {
       display: block;
     }
